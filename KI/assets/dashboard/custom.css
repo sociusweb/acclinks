@@ -1,0 +1,64 @@
+.addProduct{
+	width: 135px;
+	float: right;
+}
+.center{
+	text-align: center;
+}
+.vertical{
+	vertical-align: middle!important;
+}
+
+.btn-default.btn-on.active{background-color: #5BB75B;color: white;}
+
+.btn-default.btn-off.active{background-color: #DA4F49;color: white;}
+
+
+#pswd_info ul li.valid {
+        background-position: left -42px;
+        color: green;
+}
+#passwordStrength {
+    display: block;
+    height: 5px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease;
+}
+.strength0 {
+    background: none; /* too short */
+    width: 0px;
+}
+.strength1 {
+    background: none repeat scroll 0 0 #FF4545;/* weak */
+    width: 25px;
+}
+.strength2 {
+    background: none repeat scroll 0 0 #FFC824;/* good */
+    width: 75px;
+}
+.strength3 {
+        background: none repeat scroll 0 0 #6699CC;/* strong */
+    width: 100px;
+}
+ 
+.strength4 {
+        background: none repeat scroll 0 0 #008000;/* best */
+    width: 150px;
+}
+
+.marginbtn{
+	margin-bottom: 50px;
+}
+.tip{
+	margin-left: 37%;
+}
+.alerts{
+    position: fixed;
+    top: 20%;
+    left: 45%;
+}
+
+.box-drag{
+    margin: 15px;
+}
+

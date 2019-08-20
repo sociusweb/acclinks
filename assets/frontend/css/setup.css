@@ -1,0 +1,23 @@
+        .setup{
+        background-color: white;
+        border-radius: 10px;
+        margin-top:25px;
+        margin-bottom:25px;
+        }
+        #setup_phone .detail{
+            display: none;
+        }
+        .setup .phone{
+            padding:25px;
+        }
+         #setup_phone{
+             min-height:565px;
+         }
+        #setup_phone .active {
+        display: block!important;
+        }
+
+        #setup_detail{
+           padding:25px;
+           color:black;
+        }

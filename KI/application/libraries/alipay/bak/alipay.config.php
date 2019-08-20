@@ -1,0 +1,56 @@
+<?php
+//↓↓↓↓↓↓↓↓↓↓Please configure your basic information here↓↓↓↓↓↓↓↓↓↓
+//partner ID,It's a 16-bit string start with "2088".Login in https://globalprod.alipay.com/order/myOrder.htm to see your partner ID.
+//Below is a default sandbox account for your reference,pls apply your own sandbox account here:https://global.alipay.com/help/integration/23
+//$alipay_config['partner']		= '2088621920851347';
+
+$alipay_config['partner']		= '2088621932025293';
+
+
+// MD5密钥，安全检验码，由数字和字母组成的32位字符串，查看地址：https://globalprod.alipay.com/order/myOrder.htm, see key
+//MD5 key . The security check code, 32 bit string composed of numbers and letters.See your key at https://globalprod.alipay.com/order/myOrder.htm
+//$alipay_config['key']			= 'x4lejdfnpgr5i4dufw1ff79xl3pa5ymd';
+$alipay_config['key']			= '17atcwnpd5qijt4mpw2zjdoasktxrv07';
+
+
+// 服务器异步通知页面路径  ,不能加?id=123这类自定义参数，必须外网可以正常访问
+//Page for receiving asynchronous Notification. It should be accessable from outer net.No custom parameters like '?id=123' permitted.
+$alipay_config['notify_url'] = "http://localhost/alitest/create_forex_trade-PHP-UTF-8-MD5-new/notify_url.php";
+
+// 页面跳转同步通知页面路径 需http(s)://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+ //Page for synchronous notification.It should be accessable from outer net.No custom parameters like '?id=123' permitted.
+$alipay_config['return_url'] = base_url();
+
+// 页面跳转同步通知页面路径 需http(s)://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+ //Page for synchronous notification.It should be accessable from outer net.No custom parameters like '?id=123' permitted.
+$alipay_config['return_url'] = base_url()."payment/alisuccess";
+	
+// 二级商户的网址。
+//Website of the secondary merchant
+$alipay_config['refer_url'] = base_url();
+
+//签名方式
+//sign_type
+$alipay_config['sign_type']    = strtoupper('MD5');
+
+//字符编码格式 目前支持 gbk 或 utf-8
+// input_charset   gbk and utf-8 are supported now.
+$alipay_config['input_charset']= strtolower('utf-8');
+
+//ca证书路径地址，用于curl中ssl校验,在verify_nofity中使用
+//请保证cacert.pem文件在当前文件夹目录中
+//The path of ca certificate,used to check ssl of curl in verify_notify
+//make sure cacert.pem is at the current working directory
+$alipay_config['cacert']    = getcwd().'\\cacert.pem'; 
+
+//访问模式,根据自己的服务器是否支持ssl访问，若支持请选择https；若不支持请选择http
+//Access mode,choose https if your server support ssl and use http if not
+$alipay_config['transport']    = 'https';
+		
+// 产品类型，无需修改
+//Service name of the interface.No need to modify.
+$alipay_config['service'] = "create_forex_trade";
+
+//↑↑↑↑↑↑↑↑↑↑请在这里配置您的基本信息↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+//↑↑↑↑↑↑↑↑↑↑Please configure your basic information here↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑		
+?>
