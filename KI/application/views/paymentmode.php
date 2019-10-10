@@ -29,7 +29,7 @@
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs tabs-left">
                                 <!-- <li ><a href="#signal" data-toggle="tab" class="active show">Credit Card</a></li> -->
-                                <li><a href="#network" data-toggle="tab">Paypal</a></li>
+                                <li><a href="#network" data-toggle="tab" class="active">Paypal</a></li>
                                 <li><a href="#alipay" data-toggle="tab">Alipay</a></li>
                                 <li><a href="#wechat" data-toggle="tab">Wechat Pay</a></li>
                             </ul>
