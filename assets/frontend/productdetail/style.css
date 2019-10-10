@@ -3444,7 +3444,9 @@ img.mfp-img {
 .tt-label-our-fatured {
   background: #fdbc20;
   color: #ffffff; }
-
+.tt-product-vertical-layout{
+  max-height:700px;
+}
 .tt-product-single-info .tt-label {
   margin-left: -10px;
   margin-top: -10px; }
@@ -3465,7 +3467,7 @@ img.mfp-img {
   position: relative; }
   .tt-product-vertical-layout .tt-product-single-img img {
     width: 100%;
-    height: auto; }
+    max-height: 600px; }
 
 .tt-product-vertical-layout .tt-product-single-carousel-vertical {
   margin: 0 0 44px 0;

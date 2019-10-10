@@ -2138,7 +2138,7 @@ color: white!important;
           background-repeat: no-repeat;
           background-position: center;
         }
-.#err_pro{
+#err_pro{
   color: red;
 }
 
@@ -2159,26 +2159,26 @@ select.form-control:not([size]):not([multiple]){
     text-decoration: none;
   }
 #home_accrod #accordion1 .panel-heading { 
-  background: ; 
+  /* background: ;  */
   padding:15px;
 }
 #home_accrod #accordion1 .panel-collapse .list-group-item { background: #f9f9f9; }
 #home_accrod #accordion1 .panel-collapse .list-group-item:hover { background: #f0f0f0; }
 
 #home_accrod #accordion1 .panel-heading a > .accordion-icon:after {
-    content:"\f068"; // minus
+    content:"\f068"; 
     color: #ffffff;
   }
 #home_accrod #accordion1 .panel-heading a.collapsed > .accordion-icon:after {
-    content:"\f067"; // plus
+    content:"\f067"; 
     color: #ffffff;
   }
 #home_accrod #accordion1 .panel-collapse .list-group-item > a > .accordion-icon:after {
-    content:"\f056"; // rounded minus
+    content:"\f056"; 
     color: #000000;
   }
  #home_accrod #accordion1 .panel-collapse .list-group-item > a.collapsed > .accordion-icon:after {
-    content:"\f055"; // rounded plus
+    content:"\f055"; 
     color: #000000;
   }
 
