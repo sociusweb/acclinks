@@ -140,7 +140,8 @@ class Home extends CI_Controller {
 		$totalbal = json_decode($this->api->offerList(),true);
 		$plans =$this->api->QueryOfferInfo($number);
 		$result = Array();
-		    foreach ($plans as $key_1 => &$value_1) {
+		if (!isset($plans[0]['error'])) {
+					    foreach ($plans as $key_1 => &$value_1) {
 		        // if($value['name'])
 		        foreach ($totalbal as $key_1 => $value_2) {
 		            if($value_1['OfferId'] ==  $value_2['OFR_ID']) {
@@ -148,6 +149,7 @@ class Home extends CI_Controller {
 		            }
 		        }
 		    }
+		}
 		$data['plans'] = $result;
 		$data['details']=json_decode($this->api->basic_detail($number),true);
 		$data['name']=$this->homemodel->getName();

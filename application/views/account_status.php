@@ -160,7 +160,9 @@ function get_time_ago( $time )
             <div class="col-md-8">
               <div class="prof_plan">
                 <div class="prof_plan_p">
-                  <p>Current Plans :</p>
+                  <p>Current Plans : <?php if (empty($plans)) {
+                     echo 'No plans Activated';
+                  } ?></p>
                   <?php $prevname='' ?>
                   <?php foreach ($plans as $plan) { ?>
                   <?php

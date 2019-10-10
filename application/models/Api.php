@@ -44,6 +44,9 @@ Class Api extends CI_Model
                   $data[$i]['FreeFlux'] = $xmlDoc->getElementsByTagname('FreeFlux')[$i]->nodeValue;
                   $i++;
                }
+               if ($count == 0) {
+                  $data[0]['error'] = "No plans activated";
+               }
             }else {
                $data[0]['error'] = $xmlDoc->getElementsByTagname('errmsg')[0]->nodeValue;
             }
